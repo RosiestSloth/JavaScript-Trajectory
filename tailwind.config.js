@@ -9,6 +9,12 @@ module.exports = {
     "./error.vue",
   ],
   theme: {
+    fontFamily: {
+      'bebas': ['Bebas Neue', 'sans-serif'],
+      'montserrat': ['Montserrat', 'sans-serif'],
+      'poppins': ['Poppins', 'sans-serif'],
+      'open-sans': ['Open Sans', 'sans-serif'],
+    },
     extend: {},
   },
   plugins: [],

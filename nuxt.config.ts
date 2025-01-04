@@ -8,6 +8,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  
 
   compatibilityDate: '2025-01-04',
 })
