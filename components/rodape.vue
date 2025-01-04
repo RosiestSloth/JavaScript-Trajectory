@@ -19,7 +19,7 @@
  
                      <a href="https://www.instagram.com/vinicius___santos1/" target="_blank" class="text-white hover:text-gray-200">
                          <span class="sr-only">Instagram</span>
-                         <img class="size-6" src="/public/svgs/Instagram.svg" alt="">
+                         <img class="size-6" src="/public/svgs/instagram.svg" alt="">
                      </a>
                      <a href="https://github.com/RosiestSloth" target="_blank" class="text-white hover:text-gray-200">
                          <span class="sr-only">GitHub</span>
