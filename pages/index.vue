@@ -12,7 +12,7 @@
             Recentemente, concluí um curso de JavaScript com o professor Gustavo Guanabara, onde aprendi os fundamentos dessa linguagem. Motivado a aprimorar minhas habilidades, decidi aplicar o conhecimento adquirido desenvolvendo diversas páginas interativas. Esse processo tem sido fundamental para consolidar meu aprendizado e explorar as possibilidades do JavaScript no desenvolvimento web.
           </p>
         </div>
-        <div class="mt-4 min-w-[600px] md:w-[550px]">
+        <div class="mt-4 md:w-[550px]">
           <h2 class="bg-white text-black text-[1.4em] font-montserrat font-[600] md:flex-1">
             Navegue pelas páginas desenvolvidas
           </h2>
