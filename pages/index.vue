@@ -32,7 +32,7 @@
               Principais exercícios
             </h2>
             <div id="slide" class="w-full h-full justify-center items-center overflow-hidden flex flex-col md:flex-row sm:grid grid-cols-2 gap-2 justify-items-center">
-              <div class="p-4 border-2 border-white w-[90%] h-[200px] mx-2 rounded-2xl bg-[url('/imgs/ex-1.jpg')] bg-cover text-white" id="pagina">
+              <div class="p-4 border-2 border-white w-[90%] h-[200px] rounded-2xl bg-[url('/imgs/ex-1.jpg')] bg-cover text-white w-[90%]" id="pagina">
                 <div id="content" class="">
                   <h3 class="text-white text-[1em] font-montserrat font-[700] text-center mb-4">
                     Exercício 1
