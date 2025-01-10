@@ -6,7 +6,7 @@
         <section class="mx-auto mt-4 max-w-8xl py-8 md:flex">
           <div class="md:w-[50%] md:border-r-2 border-black/70 px-4">
             <h2 class="bg-white text-black text-[1.4em] font-montserrat font-[600] md:flex-1">
-              Aqui, você encontrará todas as páginas desenvolvidas por mim utilizando JavaScript.
+              Aqui, você encontrará todas as páginas desenvolvidas por mim utilizando JavaScript
             </h2>
             <p class="font-open-sans text-[1.1em] mt-4 text-justify font-[500]">
               Recentemente, concluí um curso de JavaScript com o professor Gustavo Guanabara, onde aprendi os fundamentos dessa linguagem. Motivado a aprimorar minhas habilidades, decidi aplicar o conhecimento adquirido desenvolvendo diversas páginas interativas. Esse processo tem sido fundamental para consolidar meu aprendizado e explorar as possibilidades do JavaScript no desenvolvimento web.
