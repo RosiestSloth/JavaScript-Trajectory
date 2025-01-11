@@ -27,16 +27,16 @@
           </div>
         </section>
         <section class="mx-[-16px] bg-[url('/imgs/programador.jpg')] bg-cover bg-fixed bg-center p-8 flex flex-col md:flex-row md:flex-gap-4 items-center">
-          <div class="backdrop-blur-lg bg-white/20 p-8 rounded-lg shadow-lg h-full w-[80%] md:w-[50%] mr-2 mb-4 md:mb-0">
+          <div class="backdrop-blur-lg min-w-[300px] bg-white/20 p-8 rounded-lg shadow-lg h-full w-[80%] md:w-[50%] mr-2 mb-4 md:mb-0">
             <h2 id="texto-conteiner" class="text-white text-[1.4em] font-montserrat font-[700] text-center mb-4">
               Principais exercícios
             </h2>
             <div id="slide" class="w-full h-full justify-center items-center overflow-hidden flex flex-col md:flex-row sm:grid grid-cols-2 gap-2 justify-items-center">
-              <div class="border-2 border-white w-[90%] h-[200px] rounded-2xl bg-[url('/imgs/ex-1.jpg')] bg-cover text-white w-[90%] relative" id="pagina">
+              <div class="border-2 border-white w-[100%] h-[200px] rounded-2xl bg-[url('/imgs/ex-1.jpg')] bg-cover text-white w-[100%] relative" id="pagina">
                 <div class="absolute inset-0 bg-black/40 p-4 rounded-2xl">
                   <div id="content" class="">
                     <h3 class="text-white md:text-[1.2em] text-[1em] font-montserrat font-[700] text-center mb-4">
-                      Exercício 1
+                      10 Exercícios
                     </h3>
                     <p class="font-open-sans text-[0.7em] mt-4 font-[500] md:text-[0.9em]">
                       exercícios simples para praticar JavaScript.
@@ -45,44 +45,44 @@
                   </div>
                 </div>
               </div>
-              <div class="p-4 border-2 border-white w-[90%] h-[200px] mx-2 rounded-2xl  bg-[url('/imgs/ex-2.jpg')] bg-cover text-white" id="pagina">
+              <div class="p-4 border-2 border-white w-[100%] h-[200px] rounded-2xl  bg-[url('/imgs/ex-2.jpg')] bg-cover text-white" id="pagina">
                 <div id="content" class="">
                   conteudo
                 </div>
               </div>
-              <div class="p-4 border-2 border-white w-[90%] bg-white h-[200px] mx-2 rounded-2xl bg-[url('/imgs/ex-3.jpg')] bg-cover text-white" id="pagina">
+              <div class="p-4 border-2 border-white w-[100%] bg-white h-[200px] rounded-2xl bg-[url('/imgs/ex-3.jpg')] bg-cover text-white" id="pagina">
                 <div id="content" class="">
                   conteudo
                 </div>
               </div>
-              <div class="p-4 border-2 border-white w-[90%] bg-white h-[200px] mx-2 rounded-2xl bg-[url('/imgs/ex-4.jpg')] bg-cover md:mb-0 text-white" id="pagina">
+              <div class="p-4 border-2 border-white w-[100%] bg-white h-[200px] rounded-2xl bg-[url('/imgs/ex-4.jpg')] bg-cover md:mb-0 text-white" id="pagina">
                 <div id="content" class="">
                   conteudo
                 </div>
               </div>
             </div>
           </div>
-          <div class="backdrop-blur-lg bg-white/20 p-8 rounded-lg shadow-lg w-[80%] h-full md:w-[50%]">
+          <div class="backdrop-blur-lg min-w-[300px] bg-white/20 p-8 rounded-lg shadow-lg w-[80%] h-full md:w-[50%]">
             <h2 id="texto-conteiner" class="text-white text-[1.4em] font-montserrat font-[700] text-center mb-4">
               Principais experiências
             </h2>
             <div id="slide" class="w-full h-full justify-center items-center overflow-hidden flex flex-col md:flex-row sm:grid sm:grid-cols-2 gap-2 justify-items-center">
-              <div class="p-4 border-2 border-white w-[90%] h-[200px] mx-2 rounded-2xl bg-[url('/imgs/ex-1.jpg')] bg-cover text-white" id="pagina">
+              <div class="p-4 border-2 border-white w-[100%] h-[200px] rounded-2xl bg-[url('/imgs/ex-1.jpg')] bg-cover text-white" id="pagina">
                 <div id="content" class="">
                   conteudo
                 </div>
               </div>
-              <div class="p-4 border-2 border-white w-[90%] h-[200px] rounded-2xl bg-[url('/imgs/ex-2.jpg')] bg-cover text-white" id="pagina">
+              <div class="p-4 border-2 border-white w-[100%] h-[200px] rounded-2xl bg-[url('/imgs/ex-2.jpg')] bg-cover text-white" id="pagina">
                 <div id="content" class="">
                   conteudo
                 </div>
               </div>
-              <div class="p-4 border-2 border-white w-[90%] bg-white h-[200px] mx-2 rounded-2xl bg-[url('/imgs/ex-3.jpg')] bg-cover text-white" id="pagina">
+              <div class="p-4 border-2 border-white w-[100%] bg-white h-[200px] rounded-2xl bg-[url('/imgs/ex-3.jpg')] bg-cover text-white" id="pagina">
                 <div id="content" class="">
                   conteudo
                 </div>
               </div>
-              <div class="p-4 border-2 border-white w-[90%] bg-white h-[200px] mx-2 rounded-2xl bg-[url('/imgs/ex-4.jpg')] bg-cover md:mb-0 text-white" id="pagina ">
+              <div class="p-4 border-2 border-white w-[100%] bg-white h-[200px] rounded-2xl bg-[url('/imgs/ex-4.jpg')] bg-cover md:mb-0 text-white" id="pagina ">
                 <div id="content" class="">
                   conteudo
                 </div>
