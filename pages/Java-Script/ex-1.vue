@@ -1,18 +1,21 @@
 <template>
     <div>
       <cabecalho />
-      <main class="p-4 max-w-[1200px] mx-auto bg-white shadow-2xl shadow-white/30">
+      <main id="main" class="p-4 max-w-[1200px] mx-auto bg-white shadow-2xl shadow-white/30">
         <article>
+            <h1 class="bg-white text-black text-[1.3em] text-justify md:text-[1.9em] font-montserrat font-[600] md:flex-1">
+                10 Exercícios de JavaScript para iniciantes.
+            </h1>
           <!-- Exercício 1 -->
           <section class="ex-1 border-b-2 border-black/70">
             <div class="mx-auto max-w-7xl py-8 px-4 sm:px-6 lg:px-8">
-              <h2 class="bg-white text-black text-[1.4em] font-montserrat font-[600] md:flex-1">
+              <h2 class="bg-white text-black text-[1.1em] md:text-[1.4em] font-montserrat font-[600] md:flex-1">
                 <strong>EX1:</strong> Exibindo Mensagens no Alerta
               </h2>
-              <p class="font-open-sans text-[1.1em] mt-4 text-justify font-[400]">
+              <p class="font-open-sans text-[0.9em] md:text-[1.3em] mt-4 text-justify font-[400]">
                 Crie uma página HTML com um botão que exibe uma mensagem em um alerta quando clicado.
               </p>
-              <p class="font-open-sans text-[1.1em] mt-4 text-justify font-[400]">
+              <p class="font-open-sans text-[0.9em] md:text-[1.3em] mt-4 text-justify font-[400]">
                 Clique no botão para mostrar uma mensagem no alerta.
               </p>
               <button
@@ -28,10 +31,10 @@
           <!-- Exercício 2 -->
           <section class="ex-2 border-b-2 border-black/70">
             <div class="mx-auto max-w-7xl py-8 px-4 sm:px-6n lg:px-8">
-              <h2 class="bg-white text-black text-[1.4em] font-montserrat font-[600] md:flex-1">
+              <h2 class="bg-white text-black text-[1.1em] md:text-[1.4em] font-montserrat font-[600] md:flex-1">
                 <strong>EX2:</strong> Mudando o Texto de um Parágrafo
               </h2>
-              <p class="font-open-sans text-[1.1em] mt-4 text-justify font-[400]">
+              <p class="font-open-sans text-[0.9em] md:text-[1.3em] mt-4 text-justify font-[400]">
                 Crie um botão que, ao ser clicado, altera o texto de um parágrafo na página.
               </p>
               <button
@@ -53,10 +56,10 @@
           <!-- Exercício 3 -->
            <section>
              <div class="mx-auto max-w-7xl py-8 px-4 sm:px-6n lg:px-8">
-               <h2 class="bg-white text-black text-[1.4em] font-montserrat font-[600] md:flex-1">
+               <h2 class="bg-white text-black text-[1.1em] md:text-[1.4em] font-montserrat font-[600] md:flex-1">
                  <strong>EX3:</strong> Calculadora Simples
                </h2>
-               <p class="font-open-sans text-[1.1em] mt-4 text-justify font-[400]">
+               <p class="font-open-sans text-[0.9em] md:text-[1.3em] mt-4 text-justify font-[400]">
                 Crie um formulário que permita ao usuário inserir dois números e, ao clicar em um botão, exiba a soma desses números.
                </p>
                <form action="">
@@ -81,34 +84,143 @@
                </form>
              </div>
            </section>
+           <section id="ex4">
+             <div class="mx-auto max-w-7xl py-8 px-4 sm:px-6n lg:px-8">
+               <h2 class="bg-white text-black text-[1.1em] md:text-[1.4em] font-montserrat font-[600] md:flex-1">
+                 <strong>EX4:</strong> Alterando a Cor de Fundo
+               </h2>
+               <p class="font-open-sans text-[0.9em] md:text-[1.3em] mt-4 text-justify font-[400]">
+                Adicione três botões em uma página, cada um mudando a cor de fundo para vermelho, verde ou azul.
+               </p>
+               <button 
+               type="button" 
+               class="text-white font-[600] font-poppins bg-blue-400 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
+               @click="vermelho()"               
+               >
+                 Vermelho
+               </button>
+               <button 
+               type="button" 
+               class="text-white font-[600] font-poppins bg-blue-400 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
+               @click="verde()"
+               >
+                 Verde
+               </button>
+               <button 
+               type="button" 
+               class="text-white font-[600] font-poppins bg-blue-400 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
+               @click="azul()"
+               >
+                 Azul
+               </button>
+               <button 
+               type="button" 
+               class="text-white font-[600] font-poppins bg-blue-400 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
+               @click="branco()"
+               >
+                 Branco
+               </button>
+             </div>
+           </section>
+           <section id="ex5">
+            <h2 class="bg-white text-black text-[1.1em] md:text-[1.4em] font-montserrat font-[600] md:flex-1">
+              <strong>EX5:</strong> Mostrando e Escondendo Elementos
+            </h2>
+              <p class="font-open-sans text-[0.9em] md:text-[1.3em] mt-4 text-justify font-[400]">Crie um botão que mostre ou esconda um texto na página quando clicado.</p>
+              <button 
+               type="button" 
+               class="text-white font-[600] font-poppins bg-blue-400 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
+               @click="show()"
+               >
+                Aqui
+               </button>
+               <div id="elemento" style="display: none;">
+                <NuxtImg
+                  src="imgs\ex-4.jpg"
+                  alt="Programador"
+                  width="700"
+                  height="300"
+                  quality="50"
+                />
+               </div>
+           </section>
+           <section>
+            <h2 class="bg-white text-black text-[1.1em] md:text-[1.4em] font-montserrat font-[600] md:flex-1">
+                 <strong>EX6:</strong> Contador Incremental
+               </h2>
+               <p class="font-open-sans text-[0.9em] md:text-[1.3em] mt-4 text-justify font-[400]">
+                Crie uma página com um botão que incrementa um contador toda vez que é clicado.
+               </p>
+               <button 
+               type="button" 
+               class="text-white font-[600] font-poppins bg-blue-400 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
+               @click="somarUm()"
+               >Somar</button>
+               <p id="numero" class="text-white font-[600] font-poppins bg-blue-400 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md ">
+                {{ soma }}
+               </p>
+           </section>
         </article>
       </main>
       <Rodape />
     </div>
   </template>
   
-  <script>
-  export default {
-    methods: {
-      exibirAlerta() {
-        alert('Hello World!');
+<script lang="js">
+    export default {
+      data() {
+        return {
+          soma: 0,
+        };
       },
-      mudarTexto() {
-        const texto = document.getElementById('texto-mudado');
-        texto.innerHTML= 'Obrigado por visitar meu site!';
-      },
-      somar() {
-        const resultado = document.getElementById('resultado');
-        const n1 = parseFloat(document.getElementById('n1').value);
-        const n2 = parseFloat(document.getElementById('n2').value);
-        const soma = n1 + n2;
-        if (isNaN(soma)) {
-          resultado.innerHTML = '0';
-        } else {
-          resultado.innerHTML = soma;
-        }
-      },
-    },
-  };
-  </script>
+        methods: {
+            exibirAlerta() {
+                alert('Hello World!');
+            },
+            mudarTexto() {
+                const texto = document.getElementById('texto-mudado');
+                texto.innerHTML= 'Obrigado por visitar meu site!';
+            },
+            somar() {
+              const resultado = document.getElementById('resultado');
+              const n1 = parseFloat(document.getElementById('n1').value);
+              const n2 = parseFloat(document.getElementById('n2').value);
+              const soma = n1 + n2;
+              if (isNaN(soma)) {
+              resultado.innerHTML = '0';
+              } else {
+              resultado.innerHTML = soma;
+              }
+                
+            },
+            vermelho() {
+              const corpo = document.getElementById('main');
+              corpo.style.backgroundColor = 'red';
+            },
+            verde() {
+              const corpo = document.getElementById('main');
+              corpo.style.backgroundColor = 'green';
+            },
+            azul() {
+              const corpo = document.getElementById('main');
+              corpo.style.backgroundColor = 'blue';
+            },
+            branco() {
+              const corpo = document.getElementById('main');
+              corpo.style.backgroundColor = 'white';
+            },
+            show() {
+              const elemento = document.getElementById('elemento'); 
+              if (elemento.style.display === 'none' || elemento.style.display === '') {
+                elemento.style.display = 'block'
+              } else {
+                elemento.style.display = 'none';
+              }
+            },
+            somarUm() {
+              this.soma += 1;
+            },
+        },
+    };
+</script>
   

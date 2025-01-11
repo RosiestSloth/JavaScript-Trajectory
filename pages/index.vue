@@ -32,15 +32,17 @@
               Principais exercícios
             </h2>
             <div id="slide" class="w-full h-full justify-center items-center overflow-hidden flex flex-col md:flex-row sm:grid grid-cols-2 gap-2 justify-items-center">
-              <div class="p-4 border-2 border-white w-[90%] h-[200px] rounded-2xl bg-[url('/imgs/ex-1.jpg')] bg-cover text-white w-[90%]" id="pagina">
-                <div id="content" class="">
-                  <h3 class="text-white text-[1em] font-montserrat font-[700] text-center mb-4">
-                    Exercício 1
-                  </h3>
-                  <p class="font-open-sans text-[0.7em] mt-4 font-[500]">
-                    exercícios simples para praticar JavaScript.
-                  </p>
-                  <NuxtLink class="mx-auto text-white bg-blue-400 p-2 my-4 block w-[80%] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C] max-w-[200px]" to="/java-script/ex-1">Aqui</NuxtLink>
+              <div class="border-2 border-white w-[90%] h-[200px] rounded-2xl bg-[url('/imgs/ex-1.jpg')] bg-cover text-white w-[90%] relative" id="pagina">
+                <div class="absolute inset-0 bg-black/40 p-4 rounded-2xl">
+                  <div id="content" class="">
+                    <h3 class="text-white md:text-[1.2em] text-[1em] font-montserrat font-[700] text-center mb-4">
+                      Exercício 1
+                    </h3>
+                    <p class="font-open-sans text-[0.7em] mt-4 font-[500] md:text-[0.9em]">
+                      exercícios simples para praticar JavaScript.
+                    </p>
+                    <NuxtLink class="mx-auto text-white bg-blue-400 p-2 my-4 block w-[80%] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C] max-w-[200px]" to="/java-script/ex-1">Aqui</NuxtLink>
+                  </div>
                 </div>
               </div>
               <div class="p-4 border-2 border-white w-[90%] h-[200px] mx-2 rounded-2xl  bg-[url('/imgs/ex-2.jpg')] bg-cover text-white" id="pagina">
