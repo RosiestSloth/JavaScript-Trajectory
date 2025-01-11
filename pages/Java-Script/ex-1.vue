@@ -136,10 +136,9 @@
                </button>
                <div id="elemento" style="display: none;">
                 <NuxtImg
+                  class="w-full h-[300px] object-cover"
                   src="imgs\ex-4.jpg"
                   alt="Programador"
-                  width="700"
-                  height="300"
                   quality="50"
                 />
                </div>
