@@ -7,7 +7,7 @@
                 10 Exercícios de JavaScript para iniciantes.
             </h1>
           <!-- Exercício 1 -->
-          <section class="ex-1 border-b-2 border-black/70">
+          <section class="ex-1 border-b-2 border-black/70 mb-4 px-4 pb-4">
             <div class="mx-auto max-w-7xl py-8 px-4 sm:px-6 lg:px-8">
               <h2 class="bg-white text-black text-[1.1em] md:text-[1.4em] font-montserrat font-[600] md:flex-1">
                 <strong>EX1:</strong> Exibindo Mensagens no Alerta
@@ -29,7 +29,7 @@
           </section>
           
           <!-- Exercício 2 -->
-          <section class="ex-2 border-b-2 border-black/70">
+          <section class="ex-2 border-b-2 border-black/70 mb-4 px-4 pb-4">
             <div class="mx-auto max-w-7xl py-8 px-4 sm:px-6n lg:px-8">
               <h2 class="bg-white text-black text-[1.1em] md:text-[1.4em] font-montserrat font-[600] md:flex-1">
                 <strong>EX2:</strong> Mudando o Texto de um Parágrafo
@@ -54,7 +54,7 @@
           </section>
   
           <!-- Exercício 3 -->
-           <section>
+           <section class="ex-3 border-b-2 border-black/70 mb-4 px-4 pb-4">
              <div class="mx-auto max-w-7xl py-8 px-4 sm:px-6n lg:px-8">
                <h2 class="bg-white text-black text-[1.1em] md:text-[1.4em] font-montserrat font-[600] md:flex-1">
                  <strong>EX3:</strong> Calculadora Simples
@@ -83,8 +83,8 @@
               </p>
                </form>
              </div>
-           </section>
-           <section id="ex4">
+           </section> 
+           <section class="ex4 border-b-2 border-black/70 mb-4 px-4 pb-4">
              <div class="mx-auto max-w-7xl py-8 px-4 sm:px-6n lg:px-8">
                <h2 class="bg-white text-black text-[1.1em] md:text-[1.4em] font-montserrat font-[600] md:flex-1">
                  <strong>EX4:</strong> Alterando a Cor de Fundo
@@ -122,7 +122,7 @@
                </button>
              </div>
            </section>
-           <section id="ex5">
+           <section class="ex5 border-b-2 border-black/70 mb-4 px-4 pb-4">
             <h2 class="bg-white text-black text-[1.1em] md:text-[1.4em] font-montserrat font-[600] md:flex-1">
               <strong>EX5:</strong> Mostrando e Escondendo Elementos
             </h2>
@@ -143,7 +143,7 @@
                 />
                </div>
            </section>
-           <section>
+           <section class="ex5 border-b-2 border-black/70 mb-4 px-4 pb-4">
             <h2 class="bg-white text-black text-[1.1em] md:text-[1.4em] font-montserrat font-[600] md:flex-1">
               <strong>EX6:</strong> Contador Incremental
             </h2>
@@ -159,7 +159,7 @@
                 {{ soma }}
               </p>
            </section>
-           <section id="ex-7">
+           <section class="ex5 border-b-2 border-black/70 mb-4 px-4 pb-4">
             <h2 class="bg-white text-black text-[1.1em] md:text-[1.4em] font-montserrat font-[600] md:flex-1">
               <strong>EX7:</strong> Validando um campo de Formulário:
             </h2>
@@ -170,12 +170,36 @@
               <label for="nome">Digite seu nome: </label>
               <input class="p-2 border-2 border-black rounded-md " type="text" id="nome">
               <button
-              class="hover:bg-black hover:text-white ani py-2 px-4 mx-2 rounded-md border-2 border-black/30"
+              class="hover:bg-black hover:text-white ani py-2 px-4 mx-2 rounded-md border-2 border-black/30 duration-200"
               type="button"
               @click="Validar()"
               >Submit</button>
               <p id="erro"></p>
             </form>
+           </section>
+           <section class="ex5 border-b-2 border-black/70 mt-4 pb-4 px-4">
+            <h2 class="bg-white text-black text-[1.1em] md:text-[1.4em] font-montserrat font-[600] md:flex-1">
+              <strong>EX8:</strong> Criando uma Lista de Tarefas:
+            </h2>
+            <p class="font-open-sans text-[0.9em] md:text-[1.3em] mt-4 text-justify font-[400]">
+              Crie um campo de entrada e um botão para adicionar itens a uma lista exibida na página.
+            </p>
+            <form onsubmit="event.preventDefault(); adicionarTarefa();">
+              <input class="p-2 border-2 border-black/50 rounded-md" type="text" id="tarefa" placeholder="Digite uma tarefa">
+              <button 
+              id="item"
+              class="hover:bg-black hover:text-white ani py-2 px-4 mx-2 rounded-md border-2 border-black/30 duration-200" 
+              type="submit"
+              @click="adicionarTarefa()"
+              >Adicionar</button>
+              <p id="erro-tarefa">
+
+              </p>
+            </form>
+            <ul id="listaTaref">
+              
+            </ul>
+
            </section>
         </article>
       </main>
@@ -256,7 +280,42 @@
                 erro.style.color = 'green';
               }
             },
+            adicionarTarefa() {
+              var tarefa = document.getElementById('tarefa');
+              var erro = document.getElementById('erro-tarefa');
+              var item = document.getElementById('listaTaref');
+              var novoItem = document.createElement('li');
+
+              if (tarefa.value.length < 3) {
+                erro.innerHTML = 'ERRO! A tarefa não pode ter menos que 3 caracteres!';
+                erro.style.color = 'red';
+                return;
+              }
+
+              for (let li of item.getElementsByTagName('li')) {
+                if (li.textContent === tarefa.value) {
+                  erro.innerHTML = 'ERRO! Essa tarefa já foi adicionada.';
+                  erro.style.color = 'red';
+                  return;
+                }
+              }
+
+              erro.innerHTML = 'Tarefa cadastrada!';
+              erro.style.color = 'green';
+
+              novoItem.textContent = tarefa.value;
+              item.appendChild(novoItem);
+
+              tarefa.value = '';
+            },
         },
     };
 </script>
+
+<style scoped>
+  #listaTaref {
+    list-style-type: decimal;
+  }
+</style>
+
   
