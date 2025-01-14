@@ -19,11 +19,11 @@
             <p class="font-open-sans text-[1.1em] mt-4 text-justify font-[500]">
               Aqui Mostro minha experiência com JavaScript e conto de forma detalhada todo meu processo de aprendizado.
             </p>
-            <NuxtLink class="text-white bg-blue-400 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]" to="/experiencia">Minha Experiência</NuxtLink>
+            <NuxtLink class="text-white bg-blue-700 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]" to="/experiencia">Minha Experiência</NuxtLink>
             <p class="font-open-sans text-[1.1em] mt-4 text-justify font-[500]">
               Aqui mostro os exercícios desenvolvidos com JavaScript. Onde eu aplico meu conhecimento adquirido para criar páginas interativas e dinâmicas.
             </p>
-            <NuxtLink class="mx-auto text-white bg-blue-400 p-2 my-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]" to="/exercicios">Exercícios Realizados</NuxtLink>
+            <NuxtLink class="mx-auto text-white bg-blue-700 p-2 my-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]" to="/exercicios">Exercícios Realizados</NuxtLink>
           </div>
         </section>
         <section class="mx-[-16px] bg-[url('/imgs/programador.jpg')] bg-cover bg-fixed bg-center p-8 flex flex-col md:flex-row md:flex-gap-4 items-center">
@@ -41,7 +41,7 @@
                     <p class="font-open-sans text-[0.7em] mt-4 font-[500] md:text-[0.9em]">
                       exercícios simples para praticar JavaScript.
                     </p>
-                    <NuxtLink class="mx-auto text-white bg-blue-400 p-2 my-4 block w-[80%] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C] max-w-[200px]" to="/java-script/ex-1">Aqui</NuxtLink>
+                    <NuxtLink class="mx-auto text-white bg-blue-700 p-2 my-4 block w-[80%] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C] max-w-[200px]" to="/java-script/ex-1">Aqui</NuxtLink>
                   </div>
                 </div>
               </div>

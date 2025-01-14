@@ -19,7 +19,7 @@
                 Clique no botão para mostrar uma mensagem no alerta.
               </p>
               <button
-                class="text-white font-[600] font-poppins bg-blue-400 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
+                class="text-white font-[600] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
                 type="button"
                 @click="exibirAlerta"
               >
@@ -38,7 +38,7 @@
                 Crie um botão que, ao ser clicado, altera o texto de um parágrafo na página.
               </p>
               <button
-                class="text-white font-[600] font-poppins bg-blue-400 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
+                class="text-white font-[600] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
                 @click="mudarTexto"
                 type="button"
               >
@@ -72,13 +72,13 @@
                    <input type="number" id="n2" class="border-2 border-black rounded-md p-2">
                  </div>
                  <button
-                class="text-white font-[600] font-poppins bg-blue-400 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
+                class="text-white font-[600] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
                 @click="somar"
                 type="button"
               >
                 Somar
               </button>
-              <p id="resultado" class="text-white font-[600] font-poppins bg-blue-400 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md">
+              <p id="resultado" class="text-white font-[600] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md">
                 0
               </p>
                </form>
@@ -94,28 +94,28 @@
                </p>
                <button 
                type="button" 
-               class="text-white font-[600] font-poppins bg-blue-400 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
+               class="text-white font-[600] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
                @click="vermelho()"               
                >
                  Vermelho
                </button>
                <button 
                type="button" 
-               class="text-white font-[600] font-poppins bg-blue-400 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
+               class="text-white font-[600] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
                @click="verde()"
                >
                  Verde
                </button>
                <button 
                type="button" 
-               class="text-white font-[600] font-poppins bg-blue-400 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
+               class="text-white font-[600] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
                @click="azul()"
                >
                  Azul
                </button>
                <button 
                type="button" 
-               class="text-white font-[600] font-poppins bg-blue-400 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
+               class="text-white font-[600] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
                @click="branco()"
                >
                  Branco
@@ -129,7 +129,7 @@
               <p class="font-open-sans text-[0.9em] md:text-[1.3em] mt-4 text-justify font-[400]">Crie um botão que mostre ou esconda um texto na página quando clicado.</p>
               <button 
                type="button" 
-               class="text-white font-[600] font-poppins bg-blue-400 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
+               class="text-white font-[600] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
                @click="show()"
                >
                 Aqui
@@ -152,10 +152,10 @@
             </p>
             <button 
               type="button" 
-              class="text-white font-[600] font-poppins bg-blue-400 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
+              class="text-white font-[600] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
               @click="somarUm()"
               >Somar</button>
-              <p id="numero" class="text-white font-[600] font-poppins bg-blue-400 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md ">
+              <p id="numero" class="text-white font-[600] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md ">
                 {{ soma }}
               </p>
            </section>
@@ -289,24 +289,32 @@
               if (tarefa.value.length < 3) {
                 erro.innerHTML = 'ERRO! A tarefa não pode ter menos que 3 caracteres!';
                 erro.style.color = 'red';
-                return;
-              }
 
-              for (let li of item.getElementsByTagName('li')) {
-                if (li.textContent === tarefa.value) {
-                  erro.innerHTML = 'ERRO! Essa tarefa já foi adicionada.';
-                  erro.style.color = 'red';
-                  return;
+              } else if (!tarefa.value.trim()) {
+                erro.innerHTML = 'ERRO! Você não pode enviar um formulário vazio.';
+                erro.style.color = 'red';
+
+              } else if (!tarefa.value) {
+                erro.innerHTML = 'ERRO! Vocês precisa digitar uma tarefa!';
+                erro.style.color = 'red';
+
+              } else {
+                for (let li of item.getElementsByTagName('li')) {
+                  if (li.textContent === tarefa.value) {
+                    erro.innerHTML = 'ERRO! Essa tarefa já foi adicionada.';
+                    erro.style.color = 'red';
+                    return;
+                  }
                 }
-              }
 
-              erro.innerHTML = 'Tarefa cadastrada!';
-              erro.style.color = 'green';
+                erro.innerHTML = 'Tarefa cadastrada!';
+                erro.style.color = 'green';
 
-              novoItem.textContent = tarefa.value;
-              item.appendChild(novoItem);
+                novoItem.textContent = tarefa.value;
+                item.appendChild(novoItem);
 
-              tarefa.value = '';
+                tarefa.value = '';
+                }
             },
         },
     };
