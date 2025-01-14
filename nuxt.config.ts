@@ -1,5 +1,20 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: 'pt-br',
+      },
+      title: 'JavaScript Trajectory',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { hid: 'description', name: 'description', content: 'Este é um site sobre a trajetória do JavaScript, com tutoriais e recursos educativos.' },
+        { name: 'format-detection', content: 'telephone=no' },
+      ],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    },
+  },
   css: ['./assets/css/style.css'],
   postcss: {
     plugins: {
