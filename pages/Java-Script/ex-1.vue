@@ -145,19 +145,37 @@
            </section>
            <section>
             <h2 class="bg-white text-black text-[1.1em] md:text-[1.4em] font-montserrat font-[600] md:flex-1">
-                 <strong>EX6:</strong> Contador Incremental
-               </h2>
-               <p class="font-open-sans text-[0.9em] md:text-[1.3em] mt-4 text-justify font-[400]">
-                Crie uma página com um botão que incrementa um contador toda vez que é clicado.
-               </p>
-               <button 
-               type="button" 
-               class="text-white font-[600] font-poppins bg-blue-400 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
-               @click="somarUm()"
-               >Somar</button>
-               <p id="numero" class="text-white font-[600] font-poppins bg-blue-400 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md ">
+              <strong>EX6:</strong> Contador Incremental
+            </h2>
+            <p class="font-open-sans text-[0.9em] md:text-[1.3em] mt-4 text-justify font-[400]">
+              Crie uma página com um botão que incrementa um contador toda vez que é clicado.
+            </p>
+            <button 
+              type="button" 
+              class="text-white font-[600] font-poppins bg-blue-400 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
+              @click="somarUm()"
+              >Somar</button>
+              <p id="numero" class="text-white font-[600] font-poppins bg-blue-400 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md ">
                 {{ soma }}
-               </p>
+              </p>
+           </section>
+           <section id="ex-7">
+            <h2 class="bg-white text-black text-[1.1em] md:text-[1.4em] font-montserrat font-[600] md:flex-1">
+              <strong>EX7:</strong> Validando um campo de Formulário:
+            </h2>
+            <p class="font-open-sans text-[0.9em] md:text-[1.3em] mt-4 text-justify font-[400]">
+              Crie um formulário com um campo de texto e um botão. Ao clicar no botão, verifique se o campo de texto está vazio e exiba uma mensagem de erro, se necessário.
+            </p>
+            <form onsubmit="event.preventDefault(); Validar();" class="pt-4">
+              <label for="nome">Digite seu nome: </label>
+              <input class="p-2 border-2 border-black rounded-md " type="text" id="nome">
+              <button
+              class="hover:bg-black hover:text-white py-2 px-4 mx-2 rounded-md border-2 border-black/30"
+              type="button"
+              @click="Validar()"
+              >Submit</button>
+              <p id="erro"></p>
+            </form>
            </section>
         </article>
       </main>
@@ -218,6 +236,18 @@
             },
             somarUm() {
               this.soma += 1;
+            },
+            Validar() {
+              const submit = document.getElementById('nome');
+              const erro = document.getElementById('erro');
+
+              if (!submit.value.trim()) {
+                erro.innerHTML = 'ERRO! Você deve digitar um valor válido.';
+                erro.style.color = 'red';
+              } else {
+                erro.innerHTML = 'SUCESSO! Nome cadastrado com exito.';
+                erro.style.color = 'green';
+              }
             },
         },
     };
