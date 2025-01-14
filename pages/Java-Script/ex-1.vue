@@ -264,7 +264,7 @@
             Validar() {
               const submit = document.getElementById('nome');
               const erro = document.getElementById('erro');
-              var regex = /^[A-Za-z\s]+$/;
+              const regex = /^[A-Za-z\s]+$/;
 
               if (!submit.value.trim()) {
                 erro.innerHTML = 'ERRO! Você deve digitar um nome válido.';
@@ -281,10 +281,10 @@
               }
             },
             adicionarTarefa() {
-              var tarefa = document.getElementById('tarefa');
-              var erro = document.getElementById('erro-tarefa');
-              var item = document.getElementById('listaTaref');
-              var novoItem = document.createElement('li');
+              const tarefa = document.getElementById('tarefa');
+              const erro = document.getElementById('erro-tarefa');
+              const item = document.getElementById('listaTaref');
+              const novoItem = document.createElement('li');
 
               if (tarefa.value.length < 3) {
                 erro.innerHTML = 'ERRO! A tarefa não pode ter menos que 3 caracteres!';
