@@ -1,4 +1,4 @@
-# Aqui você vai encontrar todas as páginas desenvolvidas por mim utilizando JavaScript.
+# Aqui você vai encontrar exercícios de diversos níveis para estudar JavaScript.
 
 ## Nuxt Minimal Starter
 
