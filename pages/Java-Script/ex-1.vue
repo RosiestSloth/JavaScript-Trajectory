@@ -170,7 +170,7 @@
               <label for="nome">Digite seu nome: </label>
               <input class="p-2 border-2 border-black rounded-md " type="text" id="nome">
               <button
-              class="hover:bg-black hover:text-white py-2 px-4 mx-2 rounded-md border-2 border-black/30"
+              class="hover:bg-black hover:text-white ani py-2 px-4 mx-2 rounded-md border-2 border-black/30"
               type="button"
               @click="Validar()"
               >Submit</button>
@@ -240,9 +240,16 @@
             Validar() {
               const submit = document.getElementById('nome');
               const erro = document.getElementById('erro');
+              var regex = /^[A-Za-z\s]+$/;
 
               if (!submit.value.trim()) {
-                erro.innerHTML = 'ERRO! Você deve digitar um valor válido.';
+                erro.innerHTML = 'ERRO! Você deve digitar um nome válido.';
+                erro.style.color = 'red';
+              } else if (!regex.test(submit.value)) {
+                erro.innerHTML = 'ERRO! Seu nome pode ter apenas letras.';
+                erro.style.color = 'red';
+              } else if (submit.value.length < 3) {
+                erro.innerHTML = 'ERRO! Seu nome deve ter pelo menos 3 letras.';
                 erro.style.color = 'red';
               } else {
                 erro.innerHTML = 'SUCESSO! Nome cadastrado com exito.';
