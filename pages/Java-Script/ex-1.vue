@@ -19,7 +19,7 @@
                 Clique no botão para mostrar uma mensagem no alerta.
               </p>
               <button
-                class="text-white font-[600] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
+                class="text-white font-[700] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
                 type="button"
                 @click="exibirAlerta"
               >
@@ -38,7 +38,7 @@
                 Crie um botão que, ao ser clicado, altera o texto de um parágrafo na página.
               </p>
               <button
-                class="text-white font-[600] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
+                class="text-white font-[700] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
                 @click="mudarTexto"
                 type="button"
               >
@@ -72,13 +72,13 @@
                    <input type="number" id="n2" class="border-2 border-black rounded-md p-2">
                  </div>
                  <button
-                class="text-white font-[600] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
+                class="text-white font-[700] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
                 @click="somar"
                 type="button"
               >
                 Somar
               </button>
-              <p id="resultado" class="text-white font-[600] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md">
+              <p id="resultado" class="text-white font-[700] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md">
                 0
               </p>
                </form>
@@ -94,28 +94,28 @@
                </p>
                <button 
                type="button" 
-               class="text-white font-[600] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
+               class="text-white font-[700] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
                @click="vermelho()"               
                >
                  Vermelho
                </button>
                <button 
                type="button" 
-               class="text-white font-[600] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
+               class="text-white font-[700] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
                @click="verde()"
                >
                  Verde
                </button>
                <button 
                type="button" 
-               class="text-white font-[600] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
+               class="text-white font-[700] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
                @click="azul()"
                >
                  Azul
                </button>
                <button 
                type="button" 
-               class="text-white font-[600] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
+               class="text-white font-[700] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
                @click="branco()"
                >
                  Branco
@@ -129,7 +129,7 @@
               <p class="font-open-sans text-[0.9em] md:text-[1.3em] mt-4 text-justify font-[400]">Crie um botão que mostre ou esconda um texto na página quando clicado.</p>
               <button 
                type="button" 
-               class="text-white font-[600] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
+               class="text-white font-[700] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
                @click="show()"
                >
                 Aqui
@@ -152,10 +152,10 @@
             </p>
             <button 
               type="button" 
-              class="text-white font-[600] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
+              class="text-white font-[700] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md duration-200 hover:bg-[#1B65A6] hover:border-white active:bg-[#033E8C]"
               @click="somarUm()"
               >Somar</button>
-              <p id="numero" class="text-white font-[600] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md ">
+              <p id="numero" class="text-white font-[700] font-poppins bg-blue-600 p-2 mx-auto m-4 block w-[200px] text-center border-2 border-black rounded-md ">
                 {{ soma }}
               </p>
            </section>
@@ -200,6 +200,15 @@
               
             </ul>
 
+           </section>
+           <section class="ex5 border-b-2 border-black/70 mt-4 pb-4 px-4">
+            <h2 class="bg-white text-black text-[1.1em] md:text-[1.4em] font-montserrat font-[600] md:flex-1">
+              <strong>EX9:</strong> Exibindo a Data e Hora Atual:
+            </h2>
+            <p class="font-open-sans text-[0.9em] md:text-[1.3em] mt-4 text-justify font-[400]">
+              Adicione um botão que exibe a data e a hora atual em um parágrafo da página.
+            </p>
+            
            </section>
         </article>
       </main>
