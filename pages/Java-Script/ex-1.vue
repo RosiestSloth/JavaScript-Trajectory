@@ -84,6 +84,7 @@
                </form>
              </div>
            </section> 
+           <!-- Exercício 4 -->
            <section class="ex4 border-b-2 border-black/70 mb-4 px-4 pb-4">
              <div class="mx-auto max-w-7xl py-8 px-4 sm:px-6n lg:px-8">
                <h2 class="bg-white text-black text-[1.1em] md:text-[1.4em] font-montserrat font-[600] md:flex-1">
@@ -122,6 +123,7 @@
                </button>
              </div>
            </section>
+           <!-- Exercício 5 -->
            <section class="ex5 border-b-2 border-black/70 mb-4 px-4 pb-4">
             <h2 class="bg-white text-black text-[1.1em] md:text-[1.4em] font-montserrat font-[600] md:flex-1">
               <strong>EX5:</strong> Mostrando e Escondendo Elementos
@@ -143,7 +145,8 @@
                 />
                </div>
            </section>
-           <section class="ex5 border-b-2 border-black/70 mb-4 px-4 pb-4">
+           <!-- Exercício 6 -->
+           <section class="ex6 border-b-2 border-black/70 mb-4 px-4 pb-4">
             <h2 class="bg-white text-black text-[1.1em] md:text-[1.4em] font-montserrat font-[600] md:flex-1">
               <strong>EX6:</strong> Contador Incremental
             </h2>
@@ -159,7 +162,8 @@
                 {{ soma }}
               </p>
            </section>
-           <section class="ex5 border-b-2 border-black/70 mb-4 px-4 pb-4">
+           <!-- Exercício 7 -->
+           <section class="ex7 border-b-2 border-black/70 mb-4 px-4 pb-4">
             <h2 class="bg-white text-black text-[1.1em] md:text-[1.4em] font-montserrat font-[600] md:flex-1">
               <strong>EX7:</strong> Validando um campo de Formulário:
             </h2>
@@ -177,7 +181,8 @@
               <p id="erro"></p>
             </form>
            </section>
-           <section class="ex5 border-b-2 border-black/70 mt-4 pb-4 px-4">
+           <!-- Exercício 8 -->
+           <section class="ex8 border-b-2 border-black/70 mt-4 pb-4 px-4">
             <h2 class="bg-white text-black text-[1.1em] md:text-[1.4em] font-montserrat font-[600] md:flex-1">
               <strong>EX8:</strong> Criando uma Lista de Tarefas:
             </h2>
@@ -201,7 +206,8 @@
             </ul>
 
            </section>
-           <section class="ex5 border-b-2 border-black/70 mt-4 pb-4 px-4">
+           <!-- Exercício 9 -->
+           <section class="ex9 border-b-2 border-black/70 mt-4 pb-4 px-4">
             <h2 class="bg-white text-black text-[1.1em] md:text-[1.4em] font-montserrat font-[600] md:flex-1">
               <strong>EX9:</strong> Exibindo a Data e Hora Atual:
             </h2>
@@ -222,7 +228,8 @@
               DD/MM/AAAA
             </p>
            </section>
-           <section class="ex5 border-b-2 border-black/70 mt-4 pb-4 px-4">
+           <!-- Exercício 10 -->
+           <section class="ex10 border-b-2 border-black/70 mt-4 pb-4 px-4">
             <h2 class="bg-white text-black text-[1.1em] md:text-[1.4em] font-montserrat font-[600] md:flex-1">
               <strong>EX10:</strong> Mudando o Estilo do Texto:
             </h2>
