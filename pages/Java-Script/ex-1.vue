@@ -208,7 +208,53 @@
             <p class="font-open-sans text-[0.9em] md:text-[1.3em] mt-4 text-justify font-[400]">
               Adicione um botão que exibe a data e a hora atual em um parágrafo da página.
             </p>
-            
+            <button
+            @click="mostrarHora()"
+            >
+              <p class="hover:bg-black hover:text-white py-2 px-4 mx-2 rounded-md border-2 border-black/30 duration-200">
+                Hora e Data
+              </p>
+            </button>
+            <p id="hora">
+              HH:MM
+            </p>
+            <p id="data">
+              DD/MM/AAAA
+            </p>
+           </section>
+           <section class="ex5 border-b-2 border-black/70 mt-4 pb-4 px-4">
+            <h2 class="bg-white text-black text-[1.1em] md:text-[1.4em] font-montserrat font-[600] md:flex-1">
+              <strong>EX10:</strong> Mudando o Estilo do Texto:
+            </h2>
+            <p class="font-open-sans text-[0.9em] md:text-[1.3em] mt-4 text-justify font-[400]">
+              Crie três botões que mudem o tamanho, a cor e o estilo (negrito ou itálico) de um texto na página.
+            </p>
+            <button 
+            class="hover:bg-black hover:text-white py-2 px-4 mx-2 rounded-md border-2 border-black/30 duration-200" @click="mudarEstilo(estilo = 'bold')" 
+            type="button">
+              Negrito
+            </button>
+            <button
+            class="hover:bg-black hover:text-white py-2 px-4 mx-2 rounded-md border-2 border-black/30 duration-200" @click="mudarEstilo(estilo = 'italic')"
+            type="button"
+            >
+            Itálico
+            </button>
+            <button
+            class="hover:bg-black hover:text-white py-2 px-4 mx-2 rounded-md border-2 border-black/30 duration-200" @click="mudarEstilo(estilo = 'red')"
+            type="button"
+            >
+              Vermelho
+            </button>
+            <button
+            class="hover:bg-black hover:text-white py-2 px-4 mx-2 rounded-md border-2 border-black/30 duration-200" @click="mudarEstilo(estilo = '')"
+            type="button"
+            >
+              Limpar
+            </button>
+            <p id="texto">
+              Seja bem vindo(a) ao meu site!
+            </p>
            </section>
         </article>
       </main>
@@ -325,6 +371,29 @@
                 tarefa.value = '';
                 }
             },
+            mostrarHora() {
+              const hora = document.getElementById('hora');
+              const dia = document.getElementById('data');
+              const h = new Date();
+
+              hora.innerHTML = `${h.getHours().toString().padStart(2, '0')}:${h.getMinutes().toString().padStart(2, '0')}`;
+              dia.innerHTML = `${h.getDate().toString().padStart(2, '0')}/${(h.getMonth() + 1).toString().padStart(2, '0')}/${h.getFullYear().toString().padStart(4, '0')}`;
+            },
+
+            mudarEstilo(estilo) {
+              const texto = document.getElementById('texto');
+              if (estilo == 'bold') {
+                texto.style.fontWeight = estilo;
+              } else if (estilo == 'italic'){
+                texto.style.fontStyle = estilo;
+              } else if (estilo == 'red') {
+                texto.style.color = estilo;
+              } else {
+                texto.style.fontWeight = 'normal';
+                texto.style.fontStyle = 'normal';
+                texto.style.color = 'black';
+              }
+            },
         },
     };
 </script>
@@ -333,6 +402,7 @@
   #listaTaref {
     list-style-type: decimal;
   }
+
 </style>
 
   
