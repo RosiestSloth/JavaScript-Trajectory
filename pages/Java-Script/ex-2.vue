@@ -12,12 +12,13 @@
                         As estruturas de validação em <strong>JavaScript</strong>, assim como na maioria das linguagens de programação, são fundamentais para o funcionamento do código e a verificação de condições. <br>
                         Um exemplo disso é a validação do preenchimento de e-mail e senha em um site. Nos bastidores da interface, diversas verificações são realizadas para garantir que os dados inseridos sejam corretos e protegidos contra vazamentos.
                     </p>
+                    <h2 class="mt-4 text-black text-[1.4em] font-montserrat font-[550] md:text-[1.7em]">
+                        Exercícios:
+                    </h2>
                 </section>
                 <!--Exercício 1-->
                 <section class="border-b-2 border-black/70 mt-4 pb-4 px-4">
-                    <h2 class="text-black text-[1.4em] font-montserrat font-[550] md:text-[1.7em]">
-                        Exercícios:
-                    </h2>
+                    
                     <h3 class="text-black text-[1.4em] font-montserrat font-[500]"><strong>1</strong> Verificando se um Número é Par ou Ímpar</h3>
                     <p class="font-open-sans text-[0.9em] md:text-[1.2em] mt-4 text-justify font-[400]">Crie um formulário onde o usuário insira um número e, ao clicar em um botão, exiba na tela se ele é par ou ímpar.</p>
                     <input 
@@ -52,6 +53,19 @@
                     </button>
                     <p id="acesso">
                         {{ acesso }}
+                    </p>
+                </section>
+                <!--Exercício 3-->
+                <section class="border-b-2 border-black/70 mt-4 pb-4 px-4">
+                    <h3 class="text-black text-[1.4em] font-montserrat font-[500]"><strong>3</strong> Classificando Notas Escolares</h3>
+                    <p class="font-open-sans text-[0.9em] md:text-[1.2em] mt-4 text-justify font-[400]">
+                        Crie um formulário onde o usuário insira sua nota de 0 a 10. Use `if` e `else` para classificar a nota como:
+                        <ul class="ml-4" style="list-style-type: disc; list-style-position: inside;">
+                            <li>0 a 4: "Reprovado"</li>
+                            <li>5 a 6: "Recuperação"</li>
+                            <li>6 a 10: "Aprovado"</li>
+                        </ul>
+                        
                     </p>
                 </section>
             </article>
