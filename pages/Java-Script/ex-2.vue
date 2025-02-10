@@ -4,7 +4,7 @@
         <main class="p-4 max-w-[1200px] mx-auto bg-white shadow-2xl shadow-white/30">
             <article>
                 <!--Introdução-->
-                <section>
+                <section class="border-b-2 border-black/70 mt-4 pb-4 px-4">
                     <h1 class="text-black text-[1.4em] font-montserrat font-[600] md:text-[1.9em]">
                         Condições JS
                     </h1>
@@ -14,7 +14,7 @@
                     </p>
                 </section>
                 <!--Exercício 1-->
-                <section>
+                <section class="border-b-2 border-black/70 mt-4 pb-4 px-4">
                     <h2 class="text-black text-[1.4em] font-montserrat font-[550] md:text-[1.7em]">
                         Exercícios:
                     </h2>
@@ -26,7 +26,7 @@
                     name="numero" 
                     id="numero">
                     <button 
-                    class="bg-sky-500 hover:bg-sky-600 text-white py-2 px-4 mx-2 rounded-md border-2 border-black/30 duration-200 active:bg-sky-700" type="button" 
+                    class="bg-sky-500 hover:bg-sky-600 text-white py-2 px-4 mx-2 rounded-md border-2 border-black/30 duration-200 active:bg-sky-700 font-[800] font-poppins" type="button" 
                     @click="verificar()">
                     Verificar
                 </button>
@@ -35,9 +35,24 @@
                     </p>
                 </section>
                 <!--Exercício 2-->
-                <section>
-                    <h3 class="text-black text-[1.4em] font-montserrat font-[500]"><strong>1</strong> Verificando se um Número é Par ou Ímpar</h3>
-                    <p class="font-open-sans text-[0.9em] md:text-[1.2em] mt-4 text-justify font-[400]">Crie um formulário onde o usuário insira um número e, ao clicar em um botão, exiba na tela se ele é par ou ímpar.</p>
+                <section class="border-b-2 border-black/70 mt-4 pb-4 px-4">
+                    <h3 class="text-black text-[1.4em] font-montserrat font-[500]"><strong>2</strong> Validando a Idade para Acesso</h3>
+                    <p class="font-open-sans text-[0.9em] md:text-[1.2em] mt-4 text-justify font-[400]">Crie um campo onde o usuário insira sua idade e um botão "Verificar". Se a idade for menor que 18, exiba "Acesso negado". Caso contrário, exiba "Acesso permitido".</p>
+                    <input 
+                    class="border-2 border-black rounded-md p-2 hover:bg-gray-200 duration-200"
+                    type="number" 
+                    name="idade" 
+                    id=""
+                    v-model="idade">
+                    <button
+                    class="bg-sky-500 hover:bg-sky-600 text-white py-2 px-4 mx-2 rounded-md border-2 border-black/30 duration-200 active:bg-sky-700 font-poppins font-[800]"
+                    type="button"
+                    @click="verificarIdade()">
+                        Verificar
+                    </button>
+                    <p id="acesso">
+                        {{ acesso }}
+                    </p>
                 </section>
             </article>
         </main>
@@ -51,22 +66,50 @@
             return {
                 numero: '',
                 resposta: '',
+                idade: '',
+                acesso: '',
             };
         },
         methods: {
             verificar() {
                 const numInt = parseInt(this.numero);
+                const resp = document.getElementById('resp');
 
                 if (isNaN(numInt)) {
                     this.resposta = 'Por favor, insira um número válido.';
+                    resp.style.color = 'red';
                     return;
                 }
 
                 if (numInt % 2 === 0) {
                     this.resposta = 'O número é PAR';
+                    resp.style.color = 'blue';
                 } else {
                     this.resposta = 'O número é ÍMPAR';
+                    resp.style.color = 'green';
                 }
+            },
+            verificarIdade() {
+                const idade = parseInt(this.idade);
+                const acesso = document.getElementById('acesso');
+
+                if (isNaN(idade)) {
+                    this.acesso = 'Digite uma idade válida.';
+                    acesso.style.color = 'red';
+                    return;
+                }
+
+                if (idade < 18) {
+                    this.acesso = 'NEGADO! Você é menor de idade.';
+                    acesso.style.color = 'red';
+                } else if (idade < 130) {
+                    this.acesso = 'APROVADO! Você é maior de idade.';
+                    acesso.style.color = 'green';
+                } else {
+                    this.acesso = 'ERRO! Idade inválida';
+                    acesso.style.color = 'red';
+                }
+
             },
         },
         
