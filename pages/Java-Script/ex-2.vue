@@ -65,7 +65,20 @@
                             <li>5 a 6: "Recuperação"</li>
                             <li>6 a 10: "Aprovado"</li>
                         </ul>
-                        
+                        <input
+                        type="number" 
+                        name="Nota" 
+                        id="nota" placeholder="Insira a nota do aluno" 
+                        v-model="nota" 
+                        class="border-2 border-black rounded-md p-2 hover:bg-gray-200 duration-200">
+                        <button
+                        class="bg-sky-500 hover:bg-sky-600 text-white py-2 px-4 mx-2 rounded-md border-2 border-black/30 duration-200 active:bg-sky-700 font-poppins font-[800]"
+                        type="button"
+                        @click="verificarNota()"
+                        >Verificar</button>
+                        <p id="resultadoNota">
+                            {{ resultadoNota }}
+                        </p>
                     </p>
                 </section>
             </article>
@@ -82,6 +95,8 @@
                 resposta: '',
                 idade: '',
                 acesso: '',
+                nota: '',
+                resultadoNota: '',
             };
         },
         methods: {
@@ -123,7 +138,23 @@
                     this.acesso = 'ERRO! Idade inválida';
                     acesso.style.color = 'red';
                 }
+            },
+            verificarNota(){
+                const Nota = document.getElementById('resultadoNota');
 
+                if (this.nota <= 4 && this.nota >= 0) {
+                    this.resultadoNota = 'Reprovado';
+                    Nota.style.color = 'red'
+                } else if (this.nota <= 5 && this.nota >= 5) {
+                    this.resultadoNota = 'Recuperação';
+                    Nota.style.color = 'yellow';
+                } else if (this.nota <= 10 && this.nota >= 6) {
+                    this.resultadoNota = 'Aprovado';
+                    Nota.style.color = 'green';
+                } else {
+                    this.resultadoNota = 'ERRO. Insira uma nota válida.'
+                    Nota.style.color = 'red';
+                }
             },
         },
         
