@@ -134,7 +134,7 @@
                     return;
                 }
 
-                if (idade < 18) {
+                if (idade < 18 || idade > 0) {
                     this.acesso = 'NEGADO! Você é menor de idade.';
                     acesso.style.color = 'red';
                 } else if (idade < 130) {
