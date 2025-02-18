@@ -81,6 +81,10 @@
                         </p>
                     </p>
                 </section>
+                <!--Exercício 4-->
+                <section>
+
+                </section>
             </article>
         </main>
         <Rodape />
@@ -100,6 +104,7 @@
             };
         },
         methods: {
+            // Exercício 1
             verificar() {
                 const numInt = parseInt(this.numero);
                 const resp = document.getElementById('resp');
@@ -118,6 +123,7 @@
                     resp.style.color = 'green';
                 }
             },
+            // Exercício 2
             verificarIdade() {
                 const idade = parseInt(this.idade);
                 const acesso = document.getElementById('acesso');
@@ -139,6 +145,7 @@
                     acesso.style.color = 'red';
                 }
             },
+            // Exercício 3
             verificarNota(){
                 const Nota = document.getElementById('resultadoNota');
 
